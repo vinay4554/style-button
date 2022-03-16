@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header{
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    padding: 10px 0;
+    background-color: palevioletred;
+
+}
+.section-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #71abad;
+  height: 100vh;
+}
+label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color:black
+}
+input {
+  width: 25%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #bacecc;
+  border-radius: 5px;
+  color:black;
+}
+select{
+    padding: 5px;
+  background-color: #bacecc;
+  border-radius: 5px;
+    border: none;
+    color:black;
+    width: 25%;
+}
+input[type="text"] {
+  width: 30%;
+}
+.btn-section {
+    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 50%;
+  height: 100vh;
+}
+
+.btn {
+  padding: 20px 0;
+  text-align: center;
+  margin: auto;
+}
+.btn-info {
+  flex: 70%;
+}
+.btn-info > div {
+  padding: 10px;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+}
+.btn-values {
+  flex: 50%;
+  padding-top: 70px;
+  height: 100vh;
+}
+.code{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:60%;
+    height: 75%;
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+    background-color: #062C30;
+    padding: 20px 0;
+}
+button#copycode{
+    padding: 10px;
+    text-align: center;
+    background-color: #11898d;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media only screen and (max-width:760px){
+    .section-2{
+        flex-direction: column;
+    }
+    .code{
+        width:90%;
+       padding-top: 0;
+    }
+    .btn-values{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .btn-info > div{
+        padding: 5px;
+    }
+    .btn{
+        padding-bottom: 5px;
+    }
+}
